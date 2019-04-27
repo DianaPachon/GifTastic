@@ -1,4 +1,4 @@
-var booksArray = ["The Power of Habit", "Alchemist", "To Kill A Mockinbird", "Pride and Prejudice", "The Scarlet Letter"];
+var booksArray = ["Happy", "Sad", "Angry", "Hungry"];
 
 $(document).ready(function() {
     for (var i = 0; i < booksArray.length; i++) {
@@ -21,7 +21,7 @@ function submitButtonClicked() {
 
 function searchGif(gifName) {
     $.ajax({
-            url: 'https://api.giphy.com/v1/gifs/search?q= ' + gifName + ' &api_key=dc6zaTOxFJmzC',
+            url: 'https://api.giphy.com/v1/gifs/search?q= ' + gifName + ' &api_key=2eZPKv0HB0IiDvf2YUcNwWqIJLrGETty',
             type: 'GET',
         })
         .done(function(response) {
